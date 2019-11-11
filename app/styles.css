@@ -1,0 +1,68 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-size: 80%;
+}
+
+#app{
+	width: 100%;
+	height: 100%;
+	background: black;
+	color: white;
+	padding: 1rem;
+}
+
+@font-face {
+	font-family: ClockFont;
+	src: url(/fonts/NimbusMono-Regular.otf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(/fonts/Lato-Thin.ttf);
+}
+
+
+.monospace{
+	font-family: ClockFont;
+}
+
+#timebar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#clock {
+	font-size: 10rem;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: flex-start;
+}
+
+#clock>span{
+	position: initial;
+	text-align: left;
+}
+
+#date {
+	font-size: 10rem;
+}
+
+.black{
+	color: black;
+}
+
+#clock-divider{
+	font-family: Lato;
+	line-height: 9rem;
+}
